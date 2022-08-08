@@ -1,0 +1,388 @@
+:root {
+    --main-cinza: #CCCCCC;
+    --main-branco: #FFFFFF;
+    --main-preto: #000000;
+    --main-vermelho: #cc0000;
+    --main-amarelo: #ffc400;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0;
+    margin: 0;
+    font-weight: 300;
+}
+
+body, input {
+    font-family: 'Teko', sans-serif;
+}
+
+main { /* classe pai flex box*/
+    width: 95%;
+    height: 80vh;
+    margin: 10vh 8vw 10vh 12vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    /*gap: 1vw; */
+}
+
+.robotron { /* box filho*/
+    width: 300px;
+    height: 450px;
+    background: url(../img/estrutura.png) no-repeat;
+    background-size: 100%;
+    margin: 0;
+    /*flex-basis: 40%;*/
+    position: relative;
+}
+
+.robo {
+    height: 100%;
+    position: relative;
+    left: -20%;
+}
+
+.titulo {
+    position: absolute;
+    top: 25%;
+    z-index: -1;
+    transform: rotate(180deg);
+    font-weight: 500;
+    font-size: 90px;
+    line-height: 0.8;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    color: rgba(255,255,255,0.8)
+}
+
+.box {
+    background: rgba(0,0,0,0.6);
+    clip-path: polygon(calc(100% - 30px) 0, 100% 30px, 100% calc(100% - 30px), calc(100% - 30px) 100%, 30px 100%, 0 calc(100% - 30px), 0 30px, 30px 0);
+    border-left: 5px solid var(--main-cinza);
+    height: 100%;
+}
+
+/****************************** Equipamentos *****/
+
+.equipamentos { /*box filho*/
+    /*flex-basis: 32%;*/
+    width: 350px;
+    height: 450px;
+    margin-bottom: 20px;
+}
+
+.montador {
+    height: 100%;;
+}
+
+.montador-conteudo {
+    padding: 2em 10%;
+}
+
+.peca {
+    padding: 1em 0;
+}
+
+.peca-titulo {
+    color: var(--main-branco);
+    text-transform: uppercase;
+    font-size: 1.5em;
+}
+
+.controle {
+    background: var(--main-preto);
+    border-radius: 25px;
+    float: right;
+    display: inline-flex;
+    padding: 5px;
+    align-items: center;
+    align-self: flex-end;
+}
+
+.controle-contador {
+    width: 40px;
+    height: 35px;
+    background: none;
+    border: 0;
+    margin: 0 1rem;
+    color: var(--main-branco);
+    text-align: center;
+    font-size: 1.5em;
+    display: inline-flex;
+    align-items: center;
+    padding-top: 8px;
+}
+
+.controle-ajuste {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50%;
+    color: var(--main-cinza);
+    font-size: 3em;
+    background: var(--main-preto);
+    text-align: center;
+    border: 3px solid var(--main-cinza);
+    cursor: pointer;
+}
+
+.linha {
+    border-color: var(--main-cinza);
+}
+
+/****************************** Estatísticas *****/
+.estatisticas {/*classe filho*/
+    align-items: center;
+    width: 350px;
+    height: 450px;
+    padding: 2em 0 2em 2em;
+    margin-bottom: 20px;
+}
+
+.estatistica {
+    color: var(--main-branco);
+    display: flex;
+    align-items: flex-start;
+    height: 25%;
+}
+
+.estatistica-titulo {
+    font-size: 1.5em;
+    border-bottom: 1px solid var(--main-cinza);
+    flex-basis: 40%;
+    text-transform: uppercase;
+    order: 1
+}
+
+.estatistica-valor {
+    flex-basis: 50%;
+    position: relative;
+    margin: 10px 0 0;
+    order: 2;
+    margin: -10px 0 0;
+}
+
+.estatistica-valor::after {
+    content: "";
+    display: block;
+    padding-bottom: 70%;
+    border: 1px solid var(--main-cinza);
+    border-radius: 20%;
+}
+
+.estatistica-numero {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-46%);
+    width: 100%;
+    line-height: 100%;
+    text-align: center;
+    font-size: 2em;
+    margin: 0;
+}
+
+.estatistica:nth-child(2n) .estatistica-titulo {
+    order: 2;
+    text-align: right;
+}
+
+.estatistica:nth-child(2n) .estatistica-valor {
+    order: 1;
+    flex-basis: 35%;
+    margin: 10px 0 0;
+}
+
+
+/****************************** Botões de Ação *****/
+
+.botao-fundo {
+    width: 100%;
+    float: right;
+}
+
+.producao {
+    margin-top: 1em;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    padding: 0.2em 1em;
+    float: right;
+    border: 3px solid var(--main-preto);
+    background: var(--main-branco);
+    clip-path: polygon(100% 0, 100% calc(100% - 20px), calc(100% - 20px) 100%, 0 100%, 0 0);
+    cursor: pointer;
+}
+
+.producao-init {
+    color: var(--main-branco);
+    margin-top: 1em;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    padding: 0.2em 1em;
+    float: right;
+    border: 3px solid var(--main-preto);
+    background: var(--main-vermelho);
+    clip-path: polygon(100% 0, 100% calc(100% - 20px), calc(100% - 20px) 100%, 0 100%, 0 0);
+    cursor: pointer;
+}
+
+.producao:hover {
+    background: var(--main-preto);
+    color: var(--main-branco)
+}
+
+.producao-init:hover {
+    background: var(--main-amarelo);
+    color: var(--main-preto)
+}
+
+@media screen and (max-width: 2000px) { /*resolução alta*/
+    main {
+        justify-content: center;    
+        margin: 5vh;
+    }
+
+    .robotron {
+        width: 300px;
+    }
+
+    .estatisticas {
+        width: 250px;
+        margin-right: 5px;
+    }
+
+    .equipamentos {
+        width: 300px;
+    }
+
+    .controle-contador {
+        font-size: 2em;
+    }
+    
+    .controle-ajuste {
+        width: 20px;
+        height: 20px;
+        line-height: 20px;
+        border-radius: 50%;
+        font-size: 2em;
+        border: 2px solid var(--main-cinza);
+    }
+
+}
+
+@media screen and (max-width: 943px) { /*resolução media*/
+    main {
+        justify-content: center;    
+        margin: 1vh;
+    }
+
+    .robotron {
+        width: 40%;
+    }
+
+    .robo {
+        left: -5%;
+    }
+
+    .estatisticas {
+        width: 175px;
+        margin-right: 5px;
+    }
+
+    .montador-conteudo {
+        padding: 0 10%;
+    }
+
+    .controle-contador {
+        font-size: 2em;
+    }
+    
+    .controle-ajuste {
+        width: 20px;
+        height: 20px;
+        line-height: 20px;
+        border-radius: 50%;
+        font-size: 2em;
+        border: 2px solid var(--main-cinza);
+    }
+    
+    .equipamentos {
+        width: 175px;
+    }
+
+    .botao-fundo {
+        width: 100%;
+        float: none;
+    }
+
+    .producao {
+        font-size: 1.1em;
+    }
+    
+    .producao-init {
+        font-size: 1.1em;
+    }
+}
+
+@media screen and (max-width: 843px) { /*resolução baixa*/
+    main {
+        justify-content: center;    
+        margin: 1vh;
+    }
+
+    .robotron {
+        width: 80%;
+        margin-bottom: 10px;
+    }
+
+    .robo {
+        left: -5%;
+    }
+
+    .estatisticas {
+        width: 170px;
+        margin-right: 5px;
+    }
+
+    .montador-conteudo {
+        padding: 0 10%;
+    }
+
+    .controle-contador {
+        font-size: 2em;
+    }
+    
+    .controle-ajuste {
+        width: 20px;
+        height: 20px;
+        line-height: 20px;
+        border-radius: 50%;
+        font-size: 2em;
+        border: 2px solid var(--main-cinza);
+    }
+    
+    .equipamentos {
+        width: 170px;
+    }
+
+    .botao-fundo {
+        width: 100%;
+        float: none;
+    }
+
+    .producao {
+        font-size: 1.1em;
+    }
+    
+    .producao-init {
+        font-size: 1.1em;
+    }
+}
