@@ -1,6 +1,6 @@
 # Robotron 2000
 
-![Projeto Robotron - Bruno Rivolta](./img/projetoRobotron.gif)
+![Projeto Robotron - Bruno Rivolta](https://brunorivolta.x10.mx/projetos/robotron/img/projetoRobotron.gif)
 
 Um projeto divertido do curso de Front-end da Alura sobre DOM que visa ensinar a manipular itens do HTML e CSS por meio do JavaScript. Fiz várias alterações neste projeto visando dar mais funcionalidade e uma experiência melhor ao usuário.
 
