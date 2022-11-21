@@ -1,24 +1,24 @@
 # Robotron 2000
 
-![Projeto Robotron - Bruno Rivolta](https://brunorivolta.x10.mx/projetos/robotron/img/projetoRobotron.gif)
+![Projeto Robotron - Bruno Rivolta](https://images2.imgbox.com/d2/c0/dTBV4ayD_o.gif)
 
 Um projeto divertido do curso de Front-end da Alura sobre DOM que visa ensinar a manipular itens do HTML e CSS por meio do JavaScript. Fiz várias alterações neste projeto visando dar mais funcionalidade e uma experiência melhor ao usuário.
 
 <br>
 
-### 🚀 Como Funciona
+### Como Funciona
 
 Funciona como um jogo, você deve alterar as quatidades de peças do robô (braços, blindagem, núcleos, pernas e foguetes), por sua vez elas vão modificar os valores dos atributos do robô (força, poder, energia, velocidade) que podem ficar positivos ou negativos.
 
 <br>
 
-### 📋 Ganhando o jogo
+### Ganhando o jogo
 
 Para ganhar deixe os atributos do robô positivos. Depois click em iniciar. Será exibida uma mensangem de parabêns.
 
 <br>
 
-### 🔧 Funcionalidades
+### Funcionalidades
 
 ***Responsividade:***
 
@@ -45,13 +45,13 @@ O css foi editado para que o a pagina se ajuste a qualquer dispositivo.
 
 <br>
 
-### 📦 Desenvolvimento
+### Desenvolvimento
 
 Bruno Rivolta - [GitHub](https://github.com/BrunoRivolta)  -  [Linkedin](https://www.linkedin.com/in/brunorivolta/)
 
 <br>
 
-### 🛠️ Construído com
+### Construído com
 
 * HTML
 * CSS
@@ -59,13 +59,13 @@ Bruno Rivolta - [GitHub](https://github.com/BrunoRivolta)  -  [Linkedin](https:/
 
 <br>
 
-### 📌 Versão
+### Versão
 
 V 1.0.0
 
 <br>
 
-### 🎁 Agradecimentos
+### Agradecimentos
 
 * Agradecimentos a Alura pelo projeto do Robotron.
 * Agradeço a todos que visitaram meu projeto.
@@ -73,5 +73,8 @@ V 1.0.0
 <br>
 
 ---
+### Contato
 
-⌨️ atenciosamente [Bruno Rivolta](mailto:brrivolta@gmail.com)
+Bruno Rivolta
+
+<a href="mailto:brrivolta@gmail.com"><img src="https://img.icons8.com/plasticine/100/null/apple-mail.png"></a><a href="https://github.com/BrunoRivolta"><img src="https://img.icons8.com/plasticine/100/null/github-squared.png"></a><a href="https://www.linkedin.com/in/brunorivolta/"><img src="https://img.icons8.com/plasticine/100/null/linkedin.png"></a><a href="https://www.youtube.com/channel/UC6XJ3aQvFBU7gqHvebolwJQ"><img src="https://img.icons8.com/plasticine/100/null/youtube-play--v1.png"></a><a href="https://devrivolta.blogspot.com/"><img src="https://img.icons8.com/color/48/null/blogger.png" width='90'></a>

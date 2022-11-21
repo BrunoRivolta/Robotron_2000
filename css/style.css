@@ -76,7 +76,7 @@ main { /* classe pai flex box*/
     /*flex-basis: 32%;*/
     width: 350px;
     height: 450px;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
 }
 
 .montador {
@@ -145,7 +145,7 @@ main { /* classe pai flex box*/
     width: 350px;
     height: 450px;
     padding: 2em 0 2em 2em;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
 }
 
 .estatistica {
@@ -211,6 +211,7 @@ main { /* classe pai flex box*/
 
 .producao {
     margin-top: 1em;
+    margin-right: 2px;
     font-size: 1.5em;
     text-transform: uppercase;
     padding: 0.2em 1em;
@@ -224,6 +225,7 @@ main { /* classe pai flex box*/
 .producao-init {
     color: var(--main-branco);
     margin-top: 1em;
+    margin-right: 2px;
     font-size: 1.5em;
     text-transform: uppercase;
     padding: 0.2em 1em;
@@ -245,8 +247,7 @@ main { /* classe pai flex box*/
 }
 
 @media screen and (max-width: 2000px) { /*resolução alta*/
-    main {
-        justify-content: center;    
+    main {  
         margin: 5vh;
     }
 
@@ -280,12 +281,14 @@ main { /* classe pai flex box*/
 
 @media screen and (max-width: 943px) { /*resolução media*/
     main {
-        justify-content: center;    
-        margin: 1vh;
+        margin: 1vh 1vw 1vh 1vw;
+        justify-content: center;  
+        height: 100vh;  
     }
 
     .robotron {
         width: 40%;
+        height: 360px;
     }
 
     .robo {
@@ -295,6 +298,7 @@ main { /* classe pai flex box*/
     .estatisticas {
         width: 175px;
         margin-right: 5px;
+        height: 360px;
     }
 
     .montador-conteudo {
@@ -302,7 +306,7 @@ main { /* classe pai flex box*/
     }
 
     .controle-contador {
-        font-size: 2em;
+        font-size: 1.5em;
     }
     
     .controle-ajuste {
@@ -310,12 +314,13 @@ main { /* classe pai flex box*/
         height: 20px;
         line-height: 20px;
         border-radius: 50%;
-        font-size: 2em;
+        font-size: 1.5em;
         border: 2px solid var(--main-cinza);
     }
     
     .equipamentos {
         width: 175px;
+        height: 360px;
     }
 
     .botao-fundo {
@@ -324,11 +329,19 @@ main { /* classe pai flex box*/
     }
 
     .producao {
-        font-size: 1.1em;
+        font-size: 0.8em;
     }
     
     .producao-init {
-        font-size: 1.1em;
+        font-size: 0.8em;
+    }
+
+    .peca {
+        padding: 0.5em 0;
+    }
+    
+    .peca-titulo {
+        font-size: 1em;
     }
 }
 
@@ -341,6 +354,7 @@ main { /* classe pai flex box*/
     .robotron {
         width: 80%;
         margin-bottom: 10px;
+        height: 450px;
     }
 
     .robo {
@@ -350,6 +364,7 @@ main { /* classe pai flex box*/
     .estatisticas {
         width: 170px;
         margin-right: 5px;
+        height: 450px;
     }
 
     .montador-conteudo {
@@ -371,6 +386,7 @@ main { /* classe pai flex box*/
     
     .equipamentos {
         width: 170px;
+        height: 450px;
     }
 
     .botao-fundo {
@@ -384,5 +400,13 @@ main { /* classe pai flex box*/
     
     .producao-init {
         font-size: 1.1em;
+    }
+
+    .peca {
+        padding: 1em 0;
+    }
+    
+    .peca-titulo {
+        font-size: 1.5em;
     }
 }
