@@ -259,7 +259,7 @@ footer {
     height: 3em;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 960px) {
     main { 
         grid:
             "robotron estatisticas"
@@ -286,7 +286,7 @@ footer {
     }
 }
 
-@media screen and (min-width: 1728px) {
+@media screen and (min-width: 1200px) {
     main { 
         grid-template-columns: 1fr 1fr 1fr;
         margin: 0 auto;
