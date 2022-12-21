@@ -2,7 +2,13 @@
 
 ![Projeto Robotron - Bruno Rivolta](https://images2.imgbox.com/d2/c0/dTBV4ayD_o.gif)
 
-Um projeto divertido do curso de Front-end da Alura sobre DOM que visa ensinar a manipular itens do HTML e CSS por meio do JavaScript. Fiz várias alterações neste projeto visando dar mais funcionalidade e uma experiência melhor ao usuário.
+Um projeto divertido do curso de Front-end da Alura sobre DOM que visa ensinar a manipular itens do HTML e CSS por meio do JavaScript. Fiz várias alterações neste projeto visando dar mais funcionalidade e uma melhor experiência  ao usuário.
+
+<br>
+
+### Acessando em seu navegador   
+
+Acesse o site: https://rivolta-robotron.netlify.app/    
 
 <br>
 
@@ -22,7 +28,7 @@ Para ganhar deixe os atributos do robô positivos. Depois click em iniciar. Ser�
 
 ***Responsividade:***
 
-O css foi editado para que o a pagina se ajuste a qualquer dispositivo.
+Alterei o CSS com 3 faixas de resolução, sendo que a tela se adapta aos mais diversos dispositivos. Celulares, tablets, Computadores e TV's.
 
 ***Botões:***
 
@@ -45,9 +51,6 @@ O css foi editado para que o a pagina se ajuste a qualquer dispositivo.
 
 <br>
 
-### Desenvolvimento
-
-Bruno Rivolta - [GitHub](https://github.com/BrunoRivolta)  -  [Linkedin](https://www.linkedin.com/in/brunorivolta/)
 
 <br>
 
